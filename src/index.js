@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Home from './pages/Home';
+import {Home, Proyecto1, Proyecto2, Proyecto3, Proyecto4, Proyecto5} from './pages/Home';
 import Footer from './components/Footer';
 import Navbar from './components/menu/Menu';
 import { BrowserRouter } from 'react-router-dom';
@@ -16,6 +16,7 @@ root.render(
     <BrowserRouter>
       <Navbar/>
       <Home />
+      <Proyecto1/>
       <AppRouter/>
       <Footer />
     </BrowserRouter>

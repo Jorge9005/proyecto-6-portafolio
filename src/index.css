@@ -1,7 +1,25 @@
+/*-------/*FONTS/*-------*/
+@font-face {
+    font-family: 'West Coast';
+    src: url(./fonts/_WestCoast_.ttf);
+}
+
+
 /*-------/*HOME/*-------*/
 .wrapper-home{
     background-image: url(./images/wallpaper-sky.jpg);
     height: 100vh;
     background-size: cover;
     margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-home{
+    font-family: West Coast;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: aliceblue;
 }
