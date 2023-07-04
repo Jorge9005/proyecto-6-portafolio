@@ -1,5 +1,6 @@
 import './menu.css';
 import Logo from '../../images/Logo-wallpaper-azul.png';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
     return (
@@ -22,19 +23,18 @@ function Navbar() {
                         <div className="row align-items-center position-relative">
                             <div className="col-5">
                                 <div className="site-logo mb-1">
-                                    <a href="#"><img src={Logo} alt="logo" style={{ height: "60px" }} /></a>
+                                    <NavLink to="/home"><img src={Logo} alt="logo" style={{ height: "60px" }} /></NavLink>
                                 </div>
                             </div>
                             <div className="col-7 text-right">
-                                <span className="d-inline-block d-lg-none"><a href="#" className="text-primary site-menu-toggle js-menu-toggle py-5"><span className="icon-menu h3 text-white" /></a></span>
                                 <nav className="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                                     <ul className="site-menu main-menu js-clone-nav ml-auto ">
-                                        <li><a href="#" className="nav-link">Home</a></li>
-                                        <li><a href="#" className="nav-link">Proyecto 1</a></li>
-                                        <li><a href="#" className="nav-link">Proyecto 2</a></li>
-                                        <li><a href="#" className="nav-link">Proyecto 3</a></li>
-                                        <li><a href="#" className="nav-link">Proyecto 4</a></li>
-                                        <li><a href="#" className="nav-link">Proyecto 5</a></li>
+                                        <li><NavLink to="/home" className="nav-link">Home</NavLink></li>
+                                        <li><NavLink to="/proyecto1" className="nav-link">Proyecto 1</NavLink></li>
+                                        <li><NavLink to="/proyecto2" className="nav-link">Proyecto 2</NavLink></li>
+                                        <li><NavLink to="/proyecto3" className="nav-link">Proyecto 3</NavLink></li>
+                                        <li><NavLink to="/proyecto4" className="nav-link">Proyecto 4</NavLink></li>
+                                        <li><NavLink to="/proyecto5" className="nav-link">Proyecto 5</NavLink></li>
                                     </ul>
                                 </nav>
                             </div>

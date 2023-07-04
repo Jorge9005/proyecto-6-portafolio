@@ -1,22 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {Home, Proyecto1, Proyecto2, Proyecto3, Proyecto4, Proyecto5} from './pages/Home';
-import Footer from './components/Footer';
-import Navbar from './components/menu/Menu';
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './router/AppRouter';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
+
+import './index.css';
+import {Proyecto1, Proyecto2, Proyecto3, Proyecto4, Proyecto5} from './pages/Home';
+import Footer from './components/Footer';
+import Navbar from './components/menu/Menu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Navbar/>
-      <Home />
       <Proyecto1/>
+      <Proyecto2/>
+      <Proyecto3/>
+      <Proyecto4/>
+      <Proyecto5/>
       <AppRouter/>
       <Footer />
     </BrowserRouter>
