@@ -1,11 +1,21 @@
-body {
+@font-face {
+    font-family: 'icomoon';
+    src: url(../../fonts/icomoon.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url(../../fonts/icomoon.woff) format('truetype');
+}
+
+.body-wrapper {
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: #fff;
-    height: 200vh;
+    background: #000;
+    height: 80px;
     position: relative;
 }
 
-body:before {
+.body-wrapper:before {
     content: "";
     position: absolute;
     top: 0;
@@ -21,7 +31,7 @@ body:before {
     z-index: 1;
 }
 
-body.offcanvas-menu:before {
+.body-wrapper.offcanvas-menu:before {
     opacity: 1;
     visibility: visible;
 }
@@ -60,7 +70,6 @@ a:hover {
 .hero {
     height: 100vh;
     width: 100%;
-    background: #eb4d55;
 }
 
 .site-navbar {
@@ -71,6 +80,10 @@ a:hover {
     width: 100%;
     padding: 1rem;
     position: absolute;
+}
+
+.nav-link{
+    text-transform: uppercase;
 }
 
 @media (max-width: 991.98px) {

@@ -1,0 +1,7 @@
+/*-------/*HOME/*-------*/
+.wrapper-home{
+    background-image: url(./images/wallpaper-sky.jpg);
+    height: 100vh;
+    background-size: cover;
+    margin-bottom: 0px;
+}

@@ -1,10 +1,10 @@
 function Footer() {
     return (
-        <>
-            <div className="container my-5">
-                <footer className="text-center text-white" style={{ backgroundColor: '#3f51b5' }}>
+        <div className='wrapper-footer'>
+            <div className="col col-md-12">
+                <footer className="text-center text-white" style={{ backgroundColor: 'rgba(2, 13, 49)' }}>
                     <div className="container">
-                        <section className="mt-5">
+                        <section>
                             <div className="row text-center d-flex justify-content-center pt-5">
                                 <div className="col-md-2">
                                     <h6 className="text-uppercase font-weight-bold">
@@ -33,8 +33,8 @@ function Footer() {
                                 </div>
                             </div>
                         </section>
-                        <hr className="my-5" />
-                        <section className="mb-5">
+                        <hr/>
+                        <section>
                             <div className="row d-flex justify-content-center">
                                 <div className="col-lg-8">
                                     <p>
@@ -46,7 +46,7 @@ function Footer() {
                                 </div>
                             </div>
                         </section>
-                        <section className="text-center mb-5">
+                        <section className="text-center">
                             <a href className="text-white me-4">
                                 <i className="fab fa-facebook-f" />
                             </a>
@@ -69,12 +69,12 @@ function Footer() {
                     </div>
                     <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
                         © 2020 Copyright:
-                        <a className="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                        <a className="text-white" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
                     </div>
                 </footer>
             </div>
 
-        </>
+        </div>
     );
 }
 
