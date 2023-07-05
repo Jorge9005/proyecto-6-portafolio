@@ -11,8 +11,16 @@ function SectionMenu(props) {
                 <div className="wrapper-description mt-2">
                     <p className='paragraph-description col-6'>{props.description}</p>
                     <div className='wrapper-description-button col-6'>
-                        <Link to={props.linkPagWeb} target="_blank"><button className='button-pagweb' style={{background: props.colorButton}}>PAG WEB</button></Link>
-                        <Link to={props.linkGithub} target="_blank"><button className='button-github' style={{background: props.colorButton}}>GITHUB</button></Link>
+                        <Link to={props.linkPagWeb} target="_blank">
+                            <button class="btn-description btn-pagweb" style={{backgroundColor: props.colorButton}}>
+                                <span class="btn-description-text">PAG WEB</span>
+                            </button>
+                        </Link>
+                        <Link to={props.linkGithub} target="_blank">
+                            <button class="btn-description btn-github">
+                                <span class="btn-description-text">GITHUB</span>
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

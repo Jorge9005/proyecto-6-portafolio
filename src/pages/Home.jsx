@@ -10,7 +10,10 @@ import imgProy5 from '../images/Proyecto5-img.png';
 function Home() {
     return (
         <div>
-            <SectionMenu title={"Proyecto 1"} img={imgProy1} description={"Proyecto en base a los conceptos básicos de HTML y CSS, y la librería Bootstrap."} colorButton="#0339A6"
+            <div className='wrapper-home'>
+                <h2 className='title-home'>PORTAFOLIO DE PROYECTOS de Jorge Sandoval</h2>
+            </div>
+            <SectionMenu title={"Proyecto 1"} img={imgProy1} description={""} colorButton="#0339A6"
                 linkPagWeb={"https://jorge9005.github.io/Proyecto1-ReparacionesJorgeSandoval/?classId=df26ec93-98f9-46e0-938f-e44e0e79c2da&assignmentId=129468ff-0031-4dbd-a4d4-84cd00cc0ffa&submissionId=287c4017-40b4-6eab-24ce-c1953802ff1a"}
                 linkGithub={"https://github.com/Jorge9005/Proyecto1-ReparacionesJorgeSandoval?classId=df26ec93-98f9-46e0-938f-e44e0e79c2da&assignmentId=129468ff-0031-4dbd-a4d4-84cd00cc0ffa&submissionId=287c4017-40b4-6eab-24ce-c1953802ff1a"} />
 
@@ -26,7 +29,7 @@ function Home() {
                 linkPagWeb={"https://proy-4-aplicacion-restaurante.netlify.app/?classId=df26ec93-98f9-46e0-938f-e44e0e79c2da&assignmentId=225586e2-f7cf-40f2-b676-30a930726e43&submissionId=27456ad5-f945-2279-f9e3-0e52f28fdc56"}
                 linkGithub={"https://github.com/Jorge9005/Proyecto-4-Aplicacion-Restaurante?classId=df26ec93-98f9-46e0-938f-e44e0e79c2da&assignmentId=225586e2-f7cf-40f2-b676-30a930726e43&submissionId=27456ad5-f945-2279-f9e3-0e52f28fdc56"} />
 
-            <SectionMenu title={"Proyecto 5"} img={imgProy5} description={""}
+            <SectionMenu title={"Proyecto 5"} img={imgProy5} description={""} colorButton="#F29D52"
                 linkPagWeb={"https://proyecto5-ecommerce.netlify.app/home"}
                 linkGithub={"https://github.com/Jorge9005/Proyecto-5-Comecio-Electronico-Frontend/tree/main/my-react-app?classId=df26ec93-98f9-46e0-938f-e44e0e79c2da&assignmentId=021bab50-fb1a-48d0-8a29-c8457337c43e&submissionId=6089a74f-8005-e5c5-b20a-6f6882616024"} />
         </div>
