@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
 import './index.css';
-import {Proyecto1, Proyecto2, Proyecto3, Proyecto4, Proyecto5} from './pages/Home';
+import Home from './pages/Home';
 import Footer from './components/Footer';
 import Navbar from './components/menu/Menu';
 
@@ -16,11 +16,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Navbar/>
-      <Proyecto1/>
-      <Proyecto2/>
-      <Proyecto3/>
-      <Proyecto4/>
-      <Proyecto5/>
+      <Home/>
       <AppRouter/>
       <Footer />
     </BrowserRouter>
