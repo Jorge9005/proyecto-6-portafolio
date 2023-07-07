@@ -16,6 +16,8 @@ import LogoNode from '../images/logo-node.png';
 import LogoReact from '../images/logo-react.png';
 
 
+import React from 'react';
+
 function Home() {
     return (
         <div>
@@ -26,8 +28,12 @@ function Home() {
                     </div>
                     <h2 className='title-home-home'>Jorge Sandoval</h2>
                     <div className='wrapper-links'>
-                        <Link to={"https://github.com/Jorge9005"} target="_blank"><img className='logos-home' src={LogoGithub} alt="logoGithub" /></Link>
-                        <Link to={"https://www.linkedin.com/in/jorge-sandoval-9044a717b"} target='_blank'><img className='logos-home' src={LogoLinkedin} alt="logoLinkedin" /></Link>
+                        <Link href="https://github.com/Jorge9005" target="_blank">
+                            <img className='logos-home' src={LogoGithub} alt="logoGithub" />
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/jorge-sandoval-9044a717b" target="_blank">
+                            <img className='logos-home' src={LogoLinkedin} alt="logoLinkedin" />
+                        </Link>
                     </div>
                     <div className='wrapper-logos'>
                         <img className='logos-home' src={LogoReact} alt="logoReact" />
@@ -58,7 +64,7 @@ function Home() {
                 linkPagWeb={"https://proyecto5-ecommerce.netlify.app/home"}
                 linkGithub={"https://github.com/Jorge9005/Proyecto-5-Comecio-Electronico-Frontend/tree/main/my-react-app?classId=df26ec93-98f9-46e0-938f-e44e0e79c2da&assignmentId=021bab50-fb1a-48d0-8a29-c8457337c43e&submissionId=6089a74f-8005-e5c5-b20a-6f6882616024"} />
         </div>
-    )
+    );
 }
 
 export default Home;

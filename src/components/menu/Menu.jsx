@@ -1,5 +1,6 @@
 import './menu.css';
 import Logo from '../../images/Logo-wallpaper-azul.png';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Navbar() {
@@ -20,7 +21,7 @@ function Navbar() {
                 </div>
                 <header className="site-navbar site-navbar-target" role="banner">
                     <div className="container">
-                        <div className="row align-items-center position-relative">
+                        <div className="row align-items-center">
                             <div className="col-5">
                                 <div className="site-logo mb-1">
                                     <NavLink to="/home"><img src={Logo} alt="logo" style={{ height: "60px" }} /></NavLink>
