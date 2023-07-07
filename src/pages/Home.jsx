@@ -1,17 +1,42 @@
+import { Link } from 'react-router-dom';
 import SectionMenu from '../components/SectionHome';
 
+import Logo from '../images/Logo-wallpaper-azul.png';
 import imgProy1 from '../images/Proyecto1-img.png';
 import imgProy2 from '../images/Proyecto2-img.png';
 import imgProy3 from '../images/Proyecto3-img.png';
 import imgProy4 from '../images/Proyecto4-img.png';
 import imgProy5 from '../images/Proyecto5-img.png';
+import LogoJs from '../images/logo-js.png';
+import LogoHtml from '../images/logo-html.png';
+import LogoCss from '../images/logo-css.png';
+import LogoGithub from '../images/logo-github-white.png';
+import LogoLinkedin from '../images/logo-linkedin.png';
+import LogoNode from '../images/logo-node.png';
+import LogoReact from '../images/logo-react.png';
 
 
 function Home() {
     return (
         <div>
-            <div className='wrapper-home'>
-                <h2 className='title-home'>PORTAFOLIO DE PROYECTOS de Jorge Sandoval</h2>
+            <div className='wrapper-home-home'>
+                <div className="container-home-home">
+                    <div className='wrapper-logo-home'>
+                        <img className="logo-home" src={Logo} alt="logo" />
+                    </div>
+                    <h2 className='title-home-home'>Jorge Sandoval</h2>
+                    <div className='wrapper-links'>
+                        <Link to={"https://github.com/Jorge9005"} target="_blank"><img className='logos-home' src={LogoGithub} alt="logoGithub" /></Link>
+                        <Link to={"https://www.linkedin.com/in/jorge-sandoval-9044a717b"} target='_blank'><img className='logos-home' src={LogoLinkedin} alt="logoLinkedin" /></Link>
+                    </div>
+                    <div className='wrapper-logos'>
+                        <img className='logos-home' src={LogoReact} alt="logoReact" />
+                        <img className='logos-home' src={LogoHtml} alt="logoHtml" />
+                        <img className='logos-home' src={LogoCss} alt="logoCss" />
+                        <img className='logos-home' src={LogoJs} alt="logoJs" />
+                        <img className='logos-home' src={LogoNode} alt="logoNode" />
+                    </div>
+                </div>
             </div>
             <SectionMenu title={"Proyecto 1"} img={imgProy1} description={""} colorButton="#0339A6"
                 linkPagWeb={"https://jorge9005.github.io/Proyecto1-ReparacionesJorgeSandoval/?classId=df26ec93-98f9-46e0-938f-e44e0e79c2da&assignmentId=129468ff-0031-4dbd-a4d4-84cd00cc0ffa&submissionId=287c4017-40b4-6eab-24ce-c1953802ff1a"}
